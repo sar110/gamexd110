@@ -68,46 +68,6 @@
 
     }
 
-
-     a{
-    position: relative;
-    padding: 10px 15px;  
-    font-size: 1.5em;
-    color:rgb(255, 6, 6);
-    text-shadow: 0 0 40px var(--clr);
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    transition: 0.5s;
-    border: 2px solid rgb(255, 42, 42);
-    font-family: fantasy;
-    border-radius: 14px;
-    }
-    a :hover{
-    color: #fff;
-    border: 2px solid rgba(94, 255, 177);
-    text-shadow: var(--clr);
-  }
-   a::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width:100% ;
-    height:100% ;
-    background: var(--clr);
-    z-index: -1;
-    transform: scale(0);
-    transition: 0.5s;
-    content:'' ;
-  }
-  a:hover ::before{
-  transform: scale(1);
-  transition-delay: 0.5s;
-  box-shadow: 0 0 10px var(--clr),
-  0 0 30px var(--clr),
-  0 0 60px var(--clr);
-}
-
 h2{
     color: rgb(238, 255, 0);
     font-family: fantasy;
@@ -254,6 +214,56 @@ p2{
   margin: 0px;
   padding: 0px;
 }
+a{
+    position: relative;
+    padding: 10px 15px;  
+    font-size: 1.5em;
+    color:rgb(255, 6, 6);
+    text-shadow: 0 0 40px var(--clr);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: 0.5s;
+    border: 2px solid rgb(255, 42, 42);
+    font-family: fantasy;
+    border-radius: 14px;
+    }
+    a :hover{
+    color: #fff;
+    border: 2px solid rgba(94, 255, 177);
+    text-shadow: var(--clr);
+  }
+   a::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100% ;
+    height:100% ;
+    background: var(--clr);
+    z-index: -1;
+    transform: scale(0);
+    transition: 0.5s;
+    content:'' ;
+  }
+  a:hover ::before{
+  transform: scale(1);
+  transition-delay: 0.5s;
+  box-shadow: 0 0 10px var(--clr),
+  0 0 30px var(--clr),
+  0 0 60px var(--clr);
+}
+
+.must a{
+  color: white;
+  text-shadow: 0 0 22px rgb(0, 255, 149);
+  margin: 6px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  padding: 6px;
+  font-size: 18px;
+  border-color: rgb(0, 255, 145);
+  box-shadow: 0 0 22px rgb(0, 255, 162);
+}
+
 .stream p{
   color: rgb(255, 111, 0);
   text-shadow: 0 0 2px rgb(0, 0, 0);
