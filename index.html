@@ -1,67 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>
-    GameXD 
+    GameXD
   </title>
-  <link rel="shortcut icon" href="channels4_profile.jpg" type="image/x-icon" >
-<style>
-  h1{
-    text-decoration: solid;
-  }
-    *{
-        margin: 2px;
-        padding: 0px;
+  <link rel="shortcut icon" href="channels4_profile.jpg" type="image/x-icon">
+  <style>
+    h1 {
+      text-decoration: solid;
     }
-    .head{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 120px;
-        box-shadow: 0 0 90px rgb(167, 3, 255);
-        align-items: center;
-        background: #000;
+
+    * {
+      margin: 2px;
+      padding: 0px;
     }
-   .head h1{
-        color: hsl(345, 100%, 50%);
-        font-family: fantasy;
-        text-shadow:0 0 22px #ff0741;
-        font-size: 50px;
+
+    .head {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 120px;
+      box-shadow: 0 0 90px rgb(255, 49, 166);
+      align-items: center;
+      background: #000;
     }
-   .head p9{
-      text-shadow:0 0 32px #ff8400;
-        font-size: 50px;
-        color: rgb(246, 255, 0);
-        font-family: fantasy;
+
+    .head h1 {
+      color: hsl(345, 100%, 50%);
+      font-family: fantasy;
+      text-shadow: 0 0 22px #ff0741;
+      font-size: 50px;
     }
-    .bottom h3{
+
+    .head p9 {
+      text-shadow: 0 0 32px #ff8400;
+      font-size: 50px;
+      color: rgb(246, 255, 0);
+      font-family: fantasy;
+    }
+
+    .bottom h3 {
       text-align: left;
     }
-    
-    body{
-        background-repeat:repeat-y;
-        background-attachment: fixed;
-    }
-  
-    h1{
-        color: hsl(116, 100%, 50%);
-        font-family: fantasy;
-        text-shadow:0 0 22px #34ff07;
-        font-size: 50px;
-        text-align: center;
-    } 
 
-    p9{
-      text-shadow:0 0 32px #ff8400;
-        font-size: 50px;
-        color: rgb(246, 255, 0);
-        font-family: fantasy;
-        text-align:center;
+    body {
+      background-repeat: repeat-y;
+      background-size: cover;
+      background-attachment: fixed;
     }
-    
 
-  
-    .head a{
+    h1 {
+      color: hsl(116, 100%, 50%);
+      font-family: fantasy;
+      text-shadow: 0 0 22px #34ff07;
+      font-size: 50px;
+      text-align: center;
+    }
+
+    p9 {
+      text-shadow: 0 0 32px #ff8400;
+      font-size: 50px;
+      color: rgb(246, 255, 0);
+      font-family: fantasy;
+      text-align: center;
+    }
+
+
+
+    .head a {
       font-size: 28px;
       color: #00ff77;
       border: none;
@@ -69,394 +76,453 @@
 
     }
 
-h2{
-    color: rgb(238, 255, 0);
-    font-family: fantasy;
-    text-shadow: 0 0 4px rgb(0, 0, 0);
-    font-size: 38px;
-}
-.head p9{
-  font-size: 60px;
-}
-
-p{
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 18px;
-    text-shadow: 0 0 3px white;
-}
-p7{
-    color: rgb(255, 41, 41);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 24px;
-    text-shadow: 0 0 3px rgb(255, 0, 0);
-}
-.anchor a{
-    color: rgb(255, 255, 1);
-    font-family: fantasy;
-    text-shadow: 0 0 16px rgb(251, 255, 0);
-    border: none;
-}
-.links a{
-    color: rgb(255, 255, 255);
-    font-family: fantasy;
-    text-shadow: 0 0 2px rgb(1, 222, 163);
-    font-size: 20px;
-    border: none;
-
-}
-
-.head img{
-  border-radius: 100%;
-  box-shadow: 0 0 30px rgb(255, 35, 35);
-}
-iframe{
-  box-shadow: 0 0 22px rgb(0, 255, 136);
-  margin: 2px;
-  padding: 2px;
-}
-h3{
-  color: rgb(246, 255, 0);
-  font-family: fantasy;
-  text-shadow: 0 0 12px rgb(255, 89, 0);
-  font-size: 38px;
-  text-align: center;
-}
-p8{
-  color: wheat;
-  text-shadow: 0 0 12px rgb(0, 255, 123);
-  font-family: fantasy;
-  text-align: center;
-  font-size: 38px;
-}
-span2{
-  color: wheat ;
-  text-shadow: 0 0 6px whitesmoke;
-  text-align: center;
-}
-h5{
-  color: black;
-  font-size: 1px;
-}
-h4{
-  color: rgb(251, 255, 0);
-  font-family: fantasy;
-  letter-spacing: 4px;
-  text-align: left;
-  text-shadow: 0 0 2px rgb(0, 0, 0);
-  font-size: 38px;
-}
-.secondpart img{
-  border: 3px;
-  border-color: #bf00ff;
-  border-style: groove;
-  border-width: 4px;
-  box-shadow: 0 0 2px rgb(175, 4, 255);
-}
-.secondpart a{
-  color: white;
-  background-color: rgb(0, 255, 0);
-  box-shadow: 0 0 4px rgb(0, 0, 0);
-  text-shadow: 0 0 4px rgb(0, 0, 0);
-  border-radius: 4px;
-  font-family: fantasy;
-  padding: 2px;
-  margin: 2px;
-  text-align: left;
-  border-color: black;
-  border: 2px;
-  font-size: 24px;
-  text-align:right;
-}
-h6{
-  color: whitesmoke;
-  background: rgb(9, 9, 9);
-  text-shadow:0 0 2px #fff;
-  text-align: left;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  letter-spacing: 4px;
-}
-audio{
-  background: #03ff5b;
-}
-.joiner img{
-  border-radius: 12px;
-  border:rgb(175, 4, 255);
-  border-style: groove;
-  box-shadow: 0 0 16px rgb(0, 255, 106);
-}
-footer{
-  color: rgb(73, 73, 73);
-  background-color: whitesmoke;
-  font-family: sans-serif;
-  font-size: 15px;
-  text-align: center;
-}
-footer a{
-  font-size: 15px;
- color: #00ffff;
-  border: none;
-}
-.joiner a,.pro a{
-  font-size: 28px;
- color: #00ff77;
-  border: none;
-  text-shadow: 0 0 20px #00ff73;
-}
-p2{
-  color: #ffe600;
-  text-shadow: 0 0 2px #000000;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 24px;
-}
-.stream a{
-  border: none;
-  text-decoration: none;
-  margin: 0px;
-  padding: 0px;
-}
-a{
-    position: relative;
-    padding: 10px 15px;  
-    font-size: 1.5em;
-    color:rgb(255, 6, 6);
-    text-shadow: 0 0 40px var(--clr);
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    transition: 0.5s;
-    border: 2px solid rgb(255, 42, 42);
-    font-family: fantasy;
-    border-radius: 14px;
+    h2 {
+      color: rgb(238, 255, 0);
+      font-family: fantasy;
+      text-shadow: 0 0 4px rgb(0, 0, 0);
+      font-size: 38px;
     }
-    a :hover{
-    color: #fff;
-    border: 2px solid rgba(94, 255, 177);
-    text-shadow: var(--clr);
-  }
-   a::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width:100% ;
-    height:100% ;
-    background: var(--clr);
-    z-index: -1;
-    transform: scale(0);
-    transition: 0.5s;
-    content:'' ;
-  }
-  a:hover ::before{
-  transform: scale(1);
-  transition-delay: 0.5s;
-  box-shadow: 0 0 10px var(--clr),
-  0 0 30px var(--clr),
-  0 0 60px var(--clr);
-}
 
-.must a{
-  color: white;
-  text-shadow: 0 0 22px rgb(0, 255, 149);
-  margin: 6px;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  padding: 6px;
-  text-decoration: none;
-  font-size: 18px;
-  border-color: rgb(0, 255, 145);
-  box-shadow: 0 0 22px rgb(0, 255, 162);
-}
+    .head p9 {
+      font-size: 60px;
+    }
 
-.stream p{
-  color: rgb(255, 111, 0);
-  text-shadow: 0 0 2px rgb(255, 85, 0);
-  letter-spacing: 1px;
-  font-family:fantasy;
-  margin: 4px;
-  padding: 0px;
-  font-size: 24px;
-}
-.league a{
-  border: none;
-}
-.league img{
-  border-radius: 100%;
-  box-shadow: 0 0 24px rgb(255, 35, 35);
-  margin: 38px;
-}
-</style>
-</head>  
+    p {
+      color: white;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 18px;
+      text-shadow: 0 0 3px white;
+    }
 
-<body background="Purple and Red Illustration Minimalist X60x6 Squad Gaming Desktop Backgrounds (4) - Edited.png">
-  <audio src="Powerful-Trap-.mp3" autoplay loop ></audio>
-    <hr color="Purple">  
-    <div class="head">
-     <img src="channels4_profile.jpg" align="left" width="80">
+    p7 {
+      color: rgb(255, 221, 0);
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 24px;
+      letter-spacing: 3px;
+      text-shadow: 0 0 4px rgb(255, 204, 0);
+    }
+
+    .anchor a {
+      color: rgb(255, 255, 1);
+      font-family: fantasy;
+      text-shadow: 0 0 16px rgb(251, 255, 0);
+      border: none;
+    }
+
+    .links a {
+      color: rgb(255, 255, 255);
+      font-family: fantasy;
+      text-shadow: 0 0 2px rgb(1, 222, 163);
+      font-size: 20px;
+      border: none;
+
+    }
+
+    .head img {
+      border-radius: 100%;
+      box-shadow: 0 0 30px rgb(255, 35, 35);
+    }
+
+    iframe {
+      box-shadow: 0 0 22px rgb(255, 0, 0);
+      margin: 2px;
+      padding: 2px;
+    }
+
+    video {
+      box-shadow: 0 0 22px rgb(255, 0, 0);
+      margin: 2px;
+      padding: 2px;
+    }
+
+    h3 {
+      color: rgb(246, 255, 0);
+      font-family: fantasy;
+      text-shadow: 0 0 12px rgb(255, 89, 0);
+      font-size: 38px;
+      text-align: center;
+    }
+
+    p8 {
+      color: wheat;
+      text-shadow: 0 0 12px rgb(0, 255, 123);
+      font-family: fantasy;
+      text-align: center;
+      font-size: 38px;
+    }
+
+    span2 {
+      color: wheat;
+      text-shadow: 0 0 6px whitesmoke;
+      text-align: center;
+    }
+
+    h5 {
+      color: black;
+      font-size: 1px;
+    }
+
+    h4 {
+      color: rgb(251, 255, 0);
+      font-family: fantasy;
+      letter-spacing: 4px;
+      text-align: left;
+      text-shadow: 0 0 2px rgb(0, 0, 0);
+      font-size: 38px;
+    }
+
+    .secondpart img {
+      border: 3px;
+      border-color: #bf00ff;
+      border-style: groove;
+      border-width: 4px;
+      box-shadow: 0 0 2px rgb(175, 4, 255);
+    }
+
+    .secondpart a {
+      color: white;
+      background-color: rgb(0, 255, 0);
+      box-shadow: 0 0 4px rgb(0, 0, 0);
+      text-shadow: 0 0 4px rgb(0, 0, 0);
+      border-radius: 4px;
+      font-family: fantasy;
+      padding: 2px;
+      margin: 2px;
+      text-align: left;
+      border-color: black;
+      border: 2px;
+      font-size: 24px;
+      text-align: right;
+    }
+
+    h6 {
+      color: whitesmoke;
+      background: rgb(9, 9, 9);
+      text-shadow: 0 0 2px #fff;
+      text-align: left;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      letter-spacing: 4px;
+    }
+
+  
+
+    .joiner img {
+      border-radius: 12px;
+      border: rgb(175, 4, 255);
+      border-style: groove;
+      box-shadow: 0 0 16px rgb(255, 0, 0);
+    }
+
+    footer {
+      color: rgb(73, 73, 73);
+      background-color: rgb(189, 189, 189);
+      font-family: sans-serif;
+      font-size: 15px;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    footer a {
+      font-size: 15px;
+      color: #00ffff;
+      border: none;
+    }
+
+    .joiner a,
+    .pro a {
+      font-size: 28px;
+      color: #00ff77;
+      border: none;
+      text-shadow: 0 0 20px #00ff73;
+    }
+
+    p2 {
+      color: #ffe600;
+      text-shadow: 0 0 2px #000000;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-size: 24px;
+    }
+
+    .stream a {
+      border: none;
+      text-decoration: none;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    a {
+      position: relative;
+      padding: 10px 15px;
+      font-size: 1.5em;
+      color: rgb(255, 6, 6);
+      text-shadow: 0 0 40px var(--clr);
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      transition: 0.5s;
+      border: 2px solid rgb(255, 42, 42);
+      font-family: fantasy;
+      border-radius: 14px;
+    }
+
+    a :hover {
+      color: #fff;
+      border: 2px solid rgba(94, 255, 177);
+      text-shadow: var(--clr);
+    }
+
+    a::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: var(--clr);
+      z-index: -1;
+      transform: scale(0);
+      transition: 0.5s;
+      content: '';
+    }
+
+    a:hover ::before {
+      transform: scale(1);
+      transition-delay: 0.5s;
+      box-shadow: 0 0 10px var(--clr),
+        0 0 30px var(--clr),
+        0 0 60px var(--clr);
+    }
+
+    .must a {
+      color: white;
+      text-shadow: 0 0 22px rgb(0, 255, 149);
+      margin: 6px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      padding: 6px;
+      text-decoration: none;
+      font-size: 18px;
+      border-color: rgb(0, 255, 145);
+      box-shadow: 0 0 22px rgb(0, 255, 162);
+    }
+
+    .stream p {
+      color: rgb(255, 242, 0);
+      text-shadow: 0 0 2px rgb(255, 0, 0);
+      letter-spacing: 2px;
+      font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      margin: 4px;
+      padding: 0px;
+      font-size: 24px;
+    }
+
+    .league a {
+      border: none;
+    }
+
+    .league img {
+      border-radius: 100%;
+      box-shadow: 0 0 24px rgb(255, 35, 35);
+      margin: 38px;
+    }
+
+    .community a {
+      text-decoration: none;
+      border: none;
+    }
+
+    .community img {
+      border-radius: 50%;
+      box-shadow: 0 0 24px rgb(255, 22, 100);
+      margin: 38px;
+    }
+  </style>
+</head>
+
+<body background="next222.png">
+  <audio src="Powerful-Trap-.mp3" autoplay loop></audio>
+  <hr color="Purple">
+  <div class="head">
+    <img src="channels4_profile.jpg" align="left" width="80">
     <h1> <b> GameXD </b> </h1>
     <div class="anchor"><a href="pass.html">&#10070; MemberShip &#10070;</a></div>
     <a href="join.html">Contact Us!</a>
-     </div>
-     <hr color="Purple">
-     <div class="bottom"><br><br><br><br>
+  </div>
+  <hr color="Purple">
+  <div class="bottom">
+    <div class="community">
+      <a href="community.html"><img src="Untitled design.jpg" width="100" height="100" align="right"></a>
+    </div>
+    <br><br>
     <h3><u><b> Watch The Latest One's </b></u></h3><br><br>
     <p>
-      <u> <b>| View The Latest Videos And Posts Fron GameXD | New Release Gaming Video Here | Stay Tuned And Support | <br> 
-       | Give The Feedback Also & Share Your Love Guy's | <b></b> </u>
+      <u> <b>| View The Latest Videos And Posts Fron GameXD | New Release Gaming Video Here | Stay Tuned And Support |
+          <br>
+          | Give The Feedback Also & Share Your Love Guy's | <b></b> </u>
     </p>
+  </div>
+  <div class="league">
+    <a href="beststreamer.html"><img src="Black Green Futuristic Game Logo.png" height="100" width="100"
+        align="right"></a>
+  </div>
+  <div class="stream">
+    <a href="stream.html"><img src="2201264.png" width="100" height="100"></a>
+    <p> Streamers </p>
+  </div><br><br>
+  <p><b>Watch The Streams Of The Streamers In The Streaming Section</b></p><br>
+  <div class="live">
+    <p7>Live Streams</p7><br><br><br>
+    <video src="live110.mp4" width="650" height="350" controls loop autoplay></video>
+    <!-- <iframe width="650" height="350" src="" controls allowfullscreen></iframe> -->
+  </div>
+  <br><br>
+  <div>
+    <div class="vid">
+      <p7>Videos</p7>
+      <br>
+      <br>
+      <p><u> How To Play GTA 5 In Mobile For Free 100% Real Part-1 </u></p>
+      <br>
+      <br>
+      <iframe width="650" height="350" src="https://www.youtube.com/embed/CPGNu0KFp0I" controls
+        allowfullscreen></iframe>
+      <br>
+      <br>
+      <br>
+      <p><u> How To Play GTA 5 In Mobile For Free 100% Real Part-2 </u></p>
+      <br>
+      <br>
+      <iframe width="650" height="350" src="https://www.youtube.com/embed/B7o396HM4Kw" controls
+        allowfullscreen></iframe>
     </div>
-    <div class="league">
-      <a href="beststreamer.html"><img src="Black Green Futuristic Game Logo.png" height="100"  width="100" align="right"></a>
-    </div>
-    <div class="stream">
-     <a href="stream.html"><img src="2201264.png" width="100" height="100"></a><p><u> Streamers </u></p>
-    </div><br><br>
-     <p><b>Watch The Streams Of The Streamers In The Streaming Section</b></p><br>
-     <div class="live">
-     <p7>Live Streams</p7><br><br><br>
-     <iframe width="650" height="350" src="https://www.youtube.com/embed/ogcKixW83Kk" controls allowfullscreen></iframe>
-    </div>
-        <br><br>
-      <div>
-       <div class="vid">
-        <p7>Videos</p7>
-        <br>
-        <br>
-        <p><u> How To Play GTA 5 In Mobile For Free 100% Real Part-1 </u></p>
-        <br>
-        <br>
-        <iframe width="650" height="350" src="https://www.youtube.com/embed/CPGNu0KFp0I" controls allowfullscreen></iframe>
-        <br>
-        <br>
-        <br>
-        <p><u> How To Play GTA 5 In Mobile For Free 100% Real Part-2 </u></p>
-        <br>
-        <br>
-        <iframe width="650" height="350" src="https://www.youtube.com/embed/B7o396HM4Kw" controls allowfullscreen></iframe>
-      </div>
-    </div>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <H3><b><u> Gaming & Funs..... </u></b></H3>
-      <br>
-      <br>
-      <div class="joiner"> 
-      <br>
-      <p><u><b>
-        If You Are Also Want To Live Or Upload Any Post Here Join Us Now ! 
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <H3><b><u> Gaming & Funs..... </u></b></H3>
+  <br>
+  <br>
+  <div class="joiner">
+    <br>
+    <p><u><b>
+          If You Are Also Want To Live Or Upload Any Post Here Join Us Now !
         </b></u></p>
-        <br>
-        <br>
-        <p>
-          JOIN US NOW; <a href="join.html">JOIN NOW !</a>
-        </p>
-        <br>
-        <br>
-        <p7>Participate In The Events To Get Amazing Rewards</p7>
-        <br>
-        <br>
-      <P>
-       <u> MINECRAFT,GTA V,FORTNITE,& MANY GAMES WE PLAY WITH YOU IN LIVE STREAMS </u> 
-      </P><br><br><br><br>
-      <img src="minecraft-1639513933156.jpg" width="200" height="200">    <img src="Grand_Theft_Auto_V.png"  width="200" height="200" >    <img src="fortnite---button-1520296499714.jpg"width="200" height="200" >
-    </div> <br>
-     <p><u><b>
-    For Want Any Kind Of Help From Us, Feedback Now!; <br>
-    Watch The Best Gaming Solutions And Gameplay Or Live Streams Here 
-     </b> </u> </p>
-     <br>
-     <br>
-     <br>
-     <h3> 
+    <br>
+    <br>
+    <p>
+      JOIN US NOW; <a href="join.html">JOIN NOW !</a>
+    </p>
+    <br>
+    <br>
+    <p7>Participate In The Events To Get Amazing Rewards</p7>
+    <br>
+    <br>
+    <P>
+      <u> MINECRAFT,GTA V,FORTNITE,& MANY GAMES WE PLAY WITH YOU IN LIVE STREAMS </u>
+    </P><br><br><br><br>
+    <img src="minecraft-1639513933156.jpg" width="200" height="200"> <img src="Grand_Theft_Auto_V.png" width="200"
+      height="200"> <img src="fortnite---button-1520296499714.jpg" width="200" height="200">
+  </div> <br>
+  <p><u><b>
+        For Want Any Kind Of Help From Us, Feedback Now!; <br>
+        Watch The Best Gaming Solutions And Gameplay Or Live Streams Here
+      </b> </u> </p>
+  <br>
+  <br>
+  <br>
+  <h3>
+    <u>
+      Gaming Solutions
+    </u>
+  </h3>
+  <br>
+  <br>
+  <h1>
+    <u> Minecraft </u>
+  </h1>
+  <br>
+  <br>
+  <br>
+  <div class="must">
+    <a href="https://mcpedl.org/minecraft-pe-1-19-21-apk/">For MOBILE "POCKET EDITION"</a><br><br><br>
+    <a href="https://tlauncher.org/en/download_1/">For PC "JAVA EDITION"</a>
+  </div>
+  <br>
+  <br>
+  <br>
+  <h3>
+    <u>
+      Hot Minecraft Mods
+    </u>
+  </h3>
+  <br>
+  <br>
+  <p7><u><b> disclaimer:</b></u></p7>
+  <br>
+  <br>
+  <p>
+    <u>
+      <b>
+        If Some Mods Are Now Work Please Check The Version Of Both Minecraft Or Mod That You Download; <br>
+        Some Minecraft Mods Are Not Guranteed To Work, Download By Your Choice.
+      </b>
+    </u>
+  </p>
+  <br>
+  <br>
+  <div class="secondpart">
+    <br>
+    <img src="pixelmon121.jpeg" width="650px">
+    <br>
+    <a href="https://www.curseforge.com/minecraft/mc-mods/pixelmon">Download</a>
+    <br>
+    <br>
+    <p><u><b>100000+ DOWNLOADS <br>
+          NO GLITCH, AND ALSO ADDED NEW POKEMONS IN THIS MOD</b></u>
+    </p>
+  </div>
+  <br>
+  <br>
+  <div class="middlecs">
+    <br><br>
+    <h3>
       <u>
-        Gaming Solutions
-      </u> 
-     </h3>
-     <br>
-     <br>
-      <h1>
-     <u>  Minecraft  </u>
-      </h1>
-      <br>
-      <br>
-      <br>
-       <div class="must">
-        <a href="https://mcpedl.org/minecraft-pe-1-19-21-apk/" >For MOBILE "POCKET EDITION"</a><br><br><br>
-        <a href="https://tlauncher.org/en/download_1/">For PC "JAVA EDITION"</a>
-        </div>
-     <br>
-     <br>
-     <br>
-     <h3>
-      <u>
-        Hot Minecraft Mods 
+        Best Mod's
       </u>
-     </h3>
-     <br>
-     <br>
-     <p7><u><b> disclaimer:</b></u></p7>
-     <br>
-     <br>
-     <p>
-        <u>
-            <b>
-                If Some Mods Are Now Work Please Check The Version Of Both Minecraft Or Mod That You Download; <br>
-                Some Minecraft Mods Are Not Guranteed To Work, Download By Your Choice.
-            </b>
-        </u>
-     </p>
-     <br>
-     <br>
-     <div class="secondpart">
-     <br>
-     <img src="pixelmon121.jpeg" width="650px">
+    </h3>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div class="links">
+    <p>
+      <u>
+        <b><br>
+          Herobrine Mods Link;<br><a href="https://mcpedl.org/herobrine-mod-minecraft-pe/">POCKET EDITION</a><a
+            href="https://www.planetminecraft.com/mods/tag/herobrine/">JAVA EDITION</a><br><br>
+          Minecraft Adventure Mods Link;<br><a href="https://mcpedl.com/new-ender-phantom-endermare-mob-addon/">POCKET
+            EDITION</a><a href="https://www.curseforge.com/minecraft/mc-mods/adventure-rpg">JAVA EDITION</a><br><br>
+        </b>
+      </u>
+    </p>
     <br>
-     <a href="https://www.curseforge.com/minecraft/mc-mods/pixelmon">Download</a>
-     <br>
-     <br>
-     <p><u><b>100000+ DOWNLOADS <br>
-      NO GLITCH, AND ALSO ADDED NEW POKEMONS IN THIS MOD</b></u> 
-     </p>
-    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <footer>
+    <hr color="grey">
     <br>
-    <br>
-    <div class="middlecs">
-     <br><br>
-      <h3>
-        <u>
-          Best Mod's 
-        </u> 
-      </h3>
-      </div>
-      <br>
-      <br>
-      <br>
-      <div class="links">
-      <p>
-        <u>
-          <b><br>
-            Herobrine Mods Link;<br><a href="https://mcpedl.org/herobrine-mod-minecraft-pe/">POCKET EDITION</a><a href="https://www.planetminecraft.com/mods/tag/herobrine/">JAVA EDITION</a><br><br>
-            Minecraft Adventure Mods Link;<br><a href="https://mcpedl.com/new-ender-phantom-endermare-mob-addon/">POCKET EDITION</a><a href="https://www.curseforge.com/minecraft/mc-mods/adventure-rpg">JAVA EDITION</a><br><br>
-          </b>
-        </u>
-      </p>
-    <br>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
-      <footer><hr color="grey">
-      <br>
-      <p4><b><u>
-        For Any Feedback<a href="join.html">Contact Us!</a><br>
-        ALL RIGHT RESERVED BY &#169 &#174 S.A.R OFFICIALS. <br> 
-        Thanks For Your Support.<br>
-      </u></b></p4>
-      </footer>
+    <p4><b><u>
+          For Any Feedback<a href="join.html">Contact Us!</a><br>
+          ALL RIGHT RESERVED BY &#169 &#174 S.A.R OFFICIALS. <br>
+          Thanks For Your Support.<br>
+        </u></b></p4>
+  </footer>
 </body>
+
 </html>
