@@ -93,9 +93,145 @@
         a{
             text-decoration: none;
         }
-    </style>
-</head>
 
+
+        .container {
+            margin-top: 30px;
+        }
+
+        textarea {
+            overflow: hidden;
+            padding: 10px;
+            width: 300px;
+            font-size: 14px;
+            margin: 50px auto;
+            display: block;
+            border-radius: 12px;
+            border: 6px solid #ffea00;
+        }
+
+        .button-group {
+            margin-bottom: 20px;
+        }
+
+        .counter {
+            display: inline;
+            margin-top: 0;
+            margin-bottom: 0;
+            margin-right: 10px;
+        }
+
+        .posts {
+            clear: both;
+            list-style: none;
+            padding-left: 4px;
+            width: 40%;
+            height: 20%;
+            text-align: left;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-shadow: 0 0 2px rgb(0, 0, 0);
+        }
+
+        .posts li {
+            background-color: #fff;
+            border: 1.5px solid #000000;
+            border-radius: 10px;
+            word-wrap: break-word;
+            min-height: 42px;
+            padding: 4px;
+            margin: 4px;
+            box-shadow: 0 0 5px #ff006a;
+        }
+
+        .btn-primary {
+            color: rgb(255, 255, 255);
+            background-color: #337ab7;
+            border-color: #2e6da4;
+
+        }
+
+        .btn {
+            min-width: 100px;
+            height: 30px;
+            cursor: pointer;
+            background: none;
+            font-family: 'Montserrat Subrayada', sans-serif;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 500ms;
+        }
+
+        .btn:before {
+            width: 80px;
+            height: 10px;
+            content: '';
+            position: absolute;
+            transform: translateY(10px);
+            transition: 500ms;
+            z-index: -1;
+        }
+
+        .btn-primary:before {
+            background: #00ffb7;
+            border-radius: 12px;
+        }
+
+        .btn:hover:before {
+            height: 30px;
+            transform: translateY(0px);
+        }
+
+        .btn:hover {
+            color: rgb(255, 230, 0);
+        }
+
+      .heading  h1 {
+            color: #ffd900;
+            font-family: fantasy;
+            text-align: center;
+            text-shadow: 0 0 3px rgb(246, 3, 3);
+            letter-spacing: 2px;
+
+        }
+
+      .heading  h2 {
+            color: rgb(0, 251, 146);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-shadow: 0 0 3px rgb(3, 238, 140);
+            text-align: center;
+        }
+    </style>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="script.js"></script>
+<script>
+    var main = function () {
+        $(".btn").click(function () {
+            var post = $(".status-box").val();
+            $("<li>").text(post).prependTo(".posts");
+            $(".status-box").val("");
+            $(".counter").text("250");
+            $(".btn").addClass("disabled");
+        });
+        $(".status-box").keyup(function () {
+            var postLength = $(this).val().length;
+            var charactersLeft = 250 - postLength;
+            $(".counter").text(charactersLeft);
+            if (charactersLeft < 0) {
+                $(".btn").addClass("disabled");
+            } else if (charactersLeft === 250) {
+                $(".btn").addClass("disabled");
+            } else {
+                $(".btn").removeClass("disabled");
+            }
+        });
+    };
+    $(".btn").addClass("disabled");
+    $(document).ready(main);
+</script>
+</head>
 <body background="moveon.png">
     <div class="img">
         <img src="Untitled design.jpg" width="100" height="100" align="left">
@@ -140,9 +276,32 @@
                <br>
                <p5>From</p5><br>
                <p7>@gamexd</p7><br>
-               <p3>Mausam Bigarne Wala Hai, Seat Belt Baand Lo Sab ;)</p3>
+               <p3>Mausam Bigarne Wala Hai, Seat Belt Baand Lo Sab ;)/p3>
             </div>
     </div>
+    <br>
+    <div class="heading">
+        <h1>Community Chat</h1>
+        <br>
+        <br>
+        <h2>
+            If You Write A Comment Please Mention The Creator Name Also.
+        </h2>
+        </div>
+        <div class="container">
+            <form>
+                <div class="form-group">
+                    <textarea id="area" class="form-control status-box" rows="3" placeholder="Enter your comment here..."
+                        required></textarea>
+                </div>
+            </form>
+            <div class="button-group pull-right">
+                <a href="#" class="btn btn-primary">Post</a>
+            </div>
+            <ul class="posts">
+            </ul>
+        </div>
+    </body>
             
            
     
