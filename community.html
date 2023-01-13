@@ -9,7 +9,7 @@
             padding: 0px;
         }
 
-        .img h1 {
+        h1 {
             color: rgb(255, 251, 0);
             text-align: center;
             text-shadow: 0 0 3px rgb(255, 149, 0);
@@ -95,117 +95,93 @@
             margin: 10px;
         }
 
-        a {
-            text-decoration: none;
+        .last h1 {
+            color: gold;
+            text-shadow: 0 0 8px rgb(255, 149, 0);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 30px;
+            text-align: center;
+            letter-spacing: 2px;
+            margin: 4px;
         }
 
+        .last h4 {
+            color: rgb(255, 255, 255);
+            font-family: sans-serif;
+            text-shadow: 0 0 2px rgb(255, 255, 255);
+            font-size: 22px;
+            margin: 12px;
+            text-align: center;
+        }
 
         .container {
-            margin-top: 30px;
-        }
-
-        textarea {
-            overflow: hidden;
-            padding: 10px;
-            width: 300px;
-            font-size: 14px;
-            margin: 50px auto;
-            display: block;
-            border-radius: 12px;
-            border: 6px solid #ffea00;
-        }
-
-        .button-group {
-            margin-bottom: 20px;
-        }
-
-        .counter {
-            display: inline;
-            margin-top: 0;
-            margin-bottom: 0;
-            margin-right: 10px;
-        }
-
-        .posts {
-            clear: both;
-            list-style: none;
-            padding-left: 4px;
-            width: 40%;
-            height: 20%;
-            text-align: left;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            text-shadow: 0 0 2px rgb(0, 0, 0);
-        }
-
-        .posts li {
-            background-color: #fff;
-            border: 1.5px solid #000000;
-            border-radius: 10px;
-            word-wrap: break-word;
-            min-height: 42px;
-            padding: 4px;
-            margin: 4px;
-            box-shadow: 0 0 5px #ff006a;
-        }
-
-        .btn-primary {
-            color: rgb(255, 255, 255);
-            background-color: #337ab7;
-            border-color: #2e6da4;
-
-        }
-
-        .btn {
-            min-width: 100px;
-            height: 30px;
-            cursor: pointer;
-            background: none;
-            font-family: 'Montserrat Subrayada', sans-serif;
-            font-size: 20px;
-            display: flex;
+            text-align: center;
             align-items: center;
-            justify-content: center;
-            transition: 500ms;
         }
 
-        .btn:before {
-            width: 80px;
-            height: 10px;
-            content: '';
-            position: absolute;
-            transform: translateY(10px);
-            transition: 500ms;
-            z-index: -1;
+        .container #name {
+            width: 280px;
+            height: 40px;
+            border-radius: 18px;
+            border-color: rgb(255, 0, 149);
+            border: 4px;
+            padding: 2px;
+            margin-inline: 14px;
+            margin: 4px;
+            box-shadow: 0 0 8px rgb(255, 0, 162);
         }
 
-        .btn-primary:before {
-            background: #00ffb7;
-            border-radius: 12px;
+        .container #comment {
+            width: 280px;
+            height: 40px;
+            border-radius: 18px;
+            border-color: rgb(255, 0, 149);
+            border: 4px;
+            padding: 2px;
+            margin-inline: 14px;
+            margin: 4px;
+            box-shadow: 0 0 8px rgb(255, 0, 162);
         }
 
-        .btn:hover:before {
-            height: 30px;
-            transform: translateY(0px);
-        }
-
-        .btn:hover {
-            color: rgb(255, 230, 0);
-        }
-
-        .heading h1 {
-            color: #ffd900;
-            font-family: fantasy;
-            text-align: center;
-            text-shadow: 0 0 3px rgb(246, 3, 3);
-            letter-spacing: 2px;
-
-        }
-
-        .heading h2 {
-            color: rgb(0, 251, 146);
+        button {
+            color: rgb(255, 255, 255);
+            background-color: rgb(255, 0, 25);
+            border-radius: 16px;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
-            text-shadow: 0 0 3px rgb(3, 238, 140);
             text-align: center;
+            margin: 8px;
+            padding: 4px;
+            font-size: 26px;
+            border: 2px;
+            border-color: black;
+            box-shadow: 0 0 4px rgb(255, 0, 43);
+        }
+
+        button :hover {
+            color: yellow;
+            background-color: rgb(0, 255, 123);
+        }
+
+        button :hover ::after {
+            color: yellow;
+            background-color: rgb(0, 255, 123);
+        }
+
+        ul {
+            text-align: center;
+            width: 450px;
+            height: auto;
+            background: #ffffff77;
+            border-radius: 20px;
+            transition: .4s;
+            padding: 14px;
+            margin: 8px;
+        }
+
+        ul li {
+            text-align: center;
+            padding: 15px;
+            margin: 18px;
         }
     </style>
 </head>
@@ -256,27 +232,67 @@
         <br>
         <p5>From</p5><br>
         <p7>@gamexd</p7><br>
-        <p3>Mausam Bigarne Wala Hai, Seat Belt Baand Lo Sab ;)/p3>
+        <p3>Mausam Bigarne Wala Hai, Seat Belt Baand Lo Sab </p3>
     </div>
     </div>
     <br>
-    <div class="heading">
+    <div class="last">
         <h1>Community Chat</h1>
-        <br>
-        <a href="comment.html">LETS go</a>
-        <br>
-        <h2>
-            If You Write A Comment Please Mention The Creator Name Also.
-        </h2>
+        <h4><b>If You Write A Comment Please Mention The Creator Name Also</b></h4>
     </div>
-    <div class="send">
-        <form action="#" id="send-container">
-            <input type="text" name="messageinp" id="messageinp">
-            <button class="btn" type="submit">Send</button>
-        </form>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <br>
+        <input type="text" placeholder="Enter Your Name" id="name"><br>
+        <input type="text" aria-rowcount="5" placeholder=" Enter Comment" id="comment"><br><br>
+        <button onclick="add()">Post</button>
     </div>
+    <ul class="list"></ul>
+    <br>
+    <br>
+    <br>
 </body>
 <script>
-    
+    let add = () => {
+        let name = document.querySelector('.container #name');
+        let comment = document.querySelector('.container #comment');
+
+        if (name.value !== "" && comment.value != "") {
+
+            let list = document.querySelector('.list');
+            let time = new Date();
+            let h = time.getHours();
+            let m = time.getMinutes();
+            let s = time.getSeconds();
+            let now = h + " : " + m + " : " + s;
+            let list_item = document.createElement("l1");
+
+            list_item.innerHTML = `
+<span>
+<p>${name.value} ${now}</p> 
+</span>
+<p>${comment.value}</p>
+`;
+            list.append(list_item);
+        }
+
+        if (name.value == "" || comment.value == "") {
+            let list = document.querySelector('.list');
+            let list_item = document.createElement("l2");
+            var warn = 'Please enter name & comment!';
+            list_item.innerHTML = `
+<span>
+<p>${warn}</p> 
+</span>
+`;
+            list.append(list_item);
+        }
+        name.value = comment.value = "";
+    }
+
 </script>
+
 </html>
