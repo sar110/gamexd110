@@ -62,35 +62,40 @@
             letter-spacing: 2px;
             margin: 4px;
         }
-        p4{
-            color:rgb(0, 255, 247);
+
+        p4 {
+            color: rgb(0, 255, 247);
             font-family: sans-serif;
             text-shadow: 0 0 2px rgb(0, 255, 255);
             font-size: 22px;
             margin: 12px;
         }
-        p7{
-            color:rgb(255, 213, 0);
+
+        p7 {
+            color: rgb(255, 213, 0);
             font-family: sans-serif;
             text-shadow: 0 0 2px rgb(255, 106, 0);
             font-size: 22px;
             margin: 12px;
         }
-        p3{
-      color: rgb(73, 73, 73);
-      background-color: rgb(252, 252, 252);
-      font-family: sans-serif;
-      font-size: 22px;
-      margin: 0px;
-      padding: 0px;
+
+        p3 {
+            color: rgb(73, 73, 73);
+            background-color: rgb(252, 252, 252);
+            font-family: sans-serif;
+            font-size: 22px;
+            margin: 0px;
+            padding: 0px;
         }
-        p5{
+
+        p5 {
             color: rgba(255, 255, 255, 0.422);
             font-size: 20px;
             font-family: sans-serif;
             margin: 10px;
         }
-        a{
+
+        a {
             text-decoration: none;
         }
 
@@ -187,7 +192,7 @@
             color: rgb(255, 230, 0);
         }
 
-      .heading  h1 {
+        .heading h1 {
             color: #ffd900;
             font-family: fantasy;
             text-align: center;
@@ -196,39 +201,15 @@
 
         }
 
-      .heading  h2 {
+        .heading h2 {
             color: rgb(0, 251, 146);
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             text-shadow: 0 0 3px rgb(3, 238, 140);
             text-align: center;
         }
     </style>
-<script>
-    var main = function () {
-        $(".btn").click(function () {
-            var post = $(".status-box").val();
-            $("<li>").text(post).prependTo(".posts");
-            $(".status-box").val("");
-            $(".counter").text("250");
-            $(".btn").addClass("disabled");
-        });
-        $(".status-box").keyup(function () {
-            var postLength = $(this).val().length;
-            var charactersLeft = 250 - postLength;
-            $(".counter").text(charactersLeft);
-            if (charactersLeft < 0) {
-                $(".btn").addClass("disabled");
-            } else if (charactersLeft === 250) {
-                $(".btn").addClass("disabled");
-            } else {
-                $(".btn").removeClass("disabled");
-            }
-        });
-    };
-    $(".btn").addClass("disabled");
-    $(document).ready(main);
-</script>
 </head>
+
 <body background="moveon.png">
     <div class="img">
         <img src="Untitled design.jpg" width="100" height="100" align="left">
@@ -242,61 +223,60 @@
     <br>
     <br>
     <p2>
-     <b>
-        <u>
-            Post Or Update
-        </u>
-     </b>
+        <b>
+            <u>
+                Post Or Update
+            </u>
+        </b>
     </p2>
     <br>
     <br>
     <div class="postes">
         <p5>From</p5><br>
-      <p7>@gamexd</p7><br>
-           <p3>Thanks To All Of You, We Are Try To Upgrade The Site And Give You A Best User Experience</p3> 
-     <br>
-     <br>
-     <p5>From</p5><br>
-     <p4>@b2b_robert</p4><br>
-          <p3>We Are Now Make A New Roast Video FT_PAGALZONE</p3> 
-          <br>
-          <br>
-          <p5>From</p5><br>
-          <p4>@b2b_robert</p4><br>
-               <p3>Also Join The Daily Stream At 3:00 P.M</p3> 
-               <br>
-               <br>
-               <p5>From</p5><br>
-               <p4>@b2b_robert</p4><br>
-               <p3>New Roast On Pagal Zone Is Out Watch Now! <a href="https://youtu.be/PlRmKiRfWDU"><p4>Click Here!</p4></a> </p3>
-               <br>
-               <br>
-               <p5>From</p5><br>
-               <p7>@gamexd</p7><br>
-               <p3>Mausam Bigarne Wala Hai, Seat Belt Baand Lo Sab ;)/p3>
-            </div>
+        <p7>@gamexd</p7><br>
+        <p3>Thanks To All Of You, We Are Try To Upgrade The Site And Give You A Best User Experience</p3>
+        <br>
+        <br>
+        <p5>From</p5><br>
+        <p4>@b2b_robert</p4><br>
+        <p3>We Are Now Make A New Roast Video FT_PAGALZONE</p3>
+        <br>
+        <br>
+        <p5>From</p5><br>
+        <p4>@b2b_robert</p4><br>
+        <p3>Also Join The Daily Stream At 3:00 P.M</p3>
+        <br>
+        <br>
+        <p5>From</p5><br>
+        <p4>@b2b_robert</p4><br>
+        <p3>New Roast On Pagal Zone Is Out Watch Now! <a href="https://youtu.be/PlRmKiRfWDU">
+                <p4>Click Here!</p4>
+            </a> </p3>
+        <br>
+        <br>
+        <p5>From</p5><br>
+        <p7>@gamexd</p7><br>
+        <p3>Mausam Bigarne Wala Hai, Seat Belt Baand Lo Sab ;)/p3>
+    </div>
     </div>
     <br>
     <div class="heading">
         <h1>Community Chat</h1>
         <br>
+        <a href="comment.html">LETS go</a>
         <br>
         <h2>
             If You Write A Comment Please Mention The Creator Name Also.
         </h2>
-        </div>
-        <div class="container">
-            <form>
-                <div class="form-group">
-                    <textarea id="area" class="form-control status-box" rows="3" placeholder="Enter your comment here..."
-                        required></textarea>
-                </div>
-            </form>
-            <div class="button-group pull-right">
-                <a href="#" class="btn btn-primary">Post</a>
-            </div>
-            <ul class="posts">
-            </ul>
-        </div>
-    </body>
+    </div>
+    <div class="send">
+        <form action="#" id="send-container">
+            <input type="text" name="messageinp" id="messageinp">
+            <button class="btn" type="submit">Send</button>
+        </form>
+    </div>
+</body>
+<script>
+    
+</script>
 </html>
